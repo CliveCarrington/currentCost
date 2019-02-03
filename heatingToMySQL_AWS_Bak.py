@@ -12,8 +12,7 @@ Server="ec2-35-176-42-248.eu-west-2.compute.amazonaws.com"
 def sendPowerMeasurement(recordDate, houseTotal, waterHeating, solarPower):
 
 	try:
-	#	con = mdb.connect('35.176.42.248', 'pi_insert', 'H0rk3sl3y', 'chapelIoT')
-		con = mdb.connect(Server, 'pi_insert', 'H0rk3sl3y', 'chapelIoT')
+		con = mdb.connect(Server, 'pi_insert', 'XXXXXXXXXX', 'XXXXXXX')
 		cur = con.cursor()
 		if recordDate == 0:
 			cur.execute("""INSERT INTO powerReadings(houseTotal, waterHeating, solarPower) 
