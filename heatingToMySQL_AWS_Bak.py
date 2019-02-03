@@ -49,7 +49,7 @@ def sendHeatingData (recordDate, roomTemp, topTankTemp, bottomTankTemp, \
 						solarPower, houseTotal, waterHeating ):
 # """ Function doc. Send all data into main centralHeating table """	
 #	try:
-#		con = mdb.connect('192.168.1.13', 'pi_insert', 'H0rk3sl3y', 'house')
+#		con = mdb.connect('192.168.1.13', 'pi_insert', 'xxxxxxxx', 'xxxxxxxxx')
 #		cur = con.cursor()
 #		if recordDate == 0:
 #			cur.execute("""INSERT INTO centralHeating(tempRoom, tempTopTank, tempBottomTank, askForHeating, \
