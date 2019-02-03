@@ -1,0 +1,60 @@
+# cc Converters Configuration file
+
+ccBaseDate,27/06/2014
+logRoot,../log,
+
+# Evaluatiing Readings , <Value>, <Min>, <Max>
+read,0,0,30,
+read,1,50,70,
+read,2,100,130,
+read,3,140,180,
+read,4,200,230,
+read,5,250,270,
+read,6,300,330,
+read,7,350,375,
+read,8,400,430,
+read,9,460,485,
+read,10,510,535,
+read,11,550,585,
+read,12,620,650,
+read,13,660,690,
+read,14,720,760,
+read,15,790,820,
+read,20,870,950,
+read,30,1400,1600,
+read,40,2300,2600,
+read,50,3500,3800,
+
+# Fields for main output table "field, <Name>"
+# Format of the python list: <Name>, Value, Age
+# A value lasts for 10 readings before being nulled
+field, dataDate,0
+field, dataTime,1
+field, roomTemp,2
+field, topTankTemp,3
+field, bottonTankTemp,4
+field, heatingOn,5
+field, roomThermostatOn,6
+field, hotWaterOn,7
+field, hotWaterOff,8
+field, boiler,9
+field, houseTotal,10
+field, solarReceived,11
+field, houseImport,12
+field, waterHeating,13
+field, houseNett,14
+field, heatingOff,15
+field, tempRoom,16
+field, tempTopTank,17
+field, tempBottomTank,18
+field, askForHeating,19
+field, askForHotWater,20
+field, roomStatOn,21
+field, tankStatOn,22
+field, boilerOn,23
+
+# A set of conversions to work out the heating control settings
+# Boiler is simply 
+
+# CH, /CH, HW, /HW, RoomStat, Boiler, CH_On, HW_On, 
+conv, 
