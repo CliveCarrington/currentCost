@@ -29,8 +29,8 @@ def sendPowerMeasurement(recordDate, houseTotal, waterHeating, solarPower):
 def sendTemperatureMeasurement(recordDate, temperature, sensor_id):
 
 	try:
-		#con = mdb.connect('35.176.42.248', 'pi_insert', 'H0rk3sl3y', 'chapelIoT')
-		con = mdb.connect(Server, 'pi_insert', 'H0rk3sl3y', 'chapelIoT')
+		#con = mdb.connect('35.176.42.248', 'pi_insert', 'xxxxxxxxxx', 'xxxxxxxxx')
+		con = mdb.connect(Server, 'pi_insert', 'xxxxxxxxx', 'xxxxxxxxx')
 		cur = con.cursor()
 		if recordDate == 0:
 			cur.execute("""INSERT INTO temperature(sensor_id, temperature) 
